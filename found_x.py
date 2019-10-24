@@ -19,12 +19,12 @@ def found_x(do=1000):
             if count in range(5,21):
                 rez = 'Угадано это {} за {} попыток{}'.format(int(x), int(count), '\n')
                 print('{:<30}'.format(rez))
-                print('Вводимые цифры {}{}'.format(str(last), '\n'))
+                print('Вводимые цифры {:-^50}{}'.format(str(last), '\n'))
                 # print('Угадано это {} за {} попыток{}'.format(int(x), int(count), '\n, \n'))
             elif count in range(5):
                 rez = 'Угадано это {} за {} попытки{}'.format(int(x), int(count), '\n')
                 print(rez)
-                print('Вводимые цифры {}{}'.format(str(last), '\n'))
+                print('Вводимые цифры {:-^50}{}'.format(str(last), '\n'))
                 # print('Угадано это {} за {} попытки{}'.format(int(x), int(count), '\n, \n'))
             break
 
