@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method="POST" action="/search4">
+    <table>
+        <p>Используй эту форму для поиска результата:</p>
+        <tr><td>Фраза:</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+        <tr><td>Буквы:</td><td><input name='letter' type='TEXT' value='абвгдеи'></td></tr>
+    </table>
+    <p>Когда будешь готов нажми на:</p>
+    <p><input value="Посчитать!" type="submit"></p>
+</form>
+
+{% endblock %}

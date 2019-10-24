@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>Вы представили следующие данные:</p>
+<table>
+    <tr><td>Фраза:</td><td>{{ the_phrase }}</td></tr>
+    <tr><td>Буквы:</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p>Фраза - "{{the_phrase }}" содержит следующие совпадающие с "{{ the_letters }}"символы:</p>
+<h3>{{ the_results }}</h3>
+
+<input value="Назад" type="button" onclick="location.href='/entry'" />
+
+{% endblock %}
